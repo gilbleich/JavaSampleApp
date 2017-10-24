@@ -103,7 +103,6 @@ if ("POST".equalsIgnoreCase(request.getMethod())){
   li {
     margin: 1em 0em;
   }
-
   #generateTrace {
     display: inline-block;
     padding: 6px 12px;
