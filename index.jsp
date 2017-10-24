@@ -5,7 +5,7 @@
 <%@page import="java.util.Scanner" %>
 <%
 /** Log POSTs at / to a file **/
-if ("POST".equalsIgnoreCase(request.getMethod())) {
+if ("POST".equalsIgnoreCase(request.getMethod())){
         BufferedWriter writer = new BufferedWriter(new FileWriter("/tmp/sample-app.log", true));
         Scanner scanner = new Scanner(request.getInputStream()).useDelimiter("\\A");
 	if(scanner.hasNext()) {
